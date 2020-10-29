@@ -4,7 +4,6 @@ import TodoCreate from './streams/TodoCreate';
 import TodoDelete from './streams/TodoDelete';
 import TodoEdit from './streams/TodoEdit';
 import TodoList from './streams/TodoList';
-import TodoShow from './streams/TodoShow';
 import Header from './Header';
 import history from '../history';
 
@@ -19,7 +18,6 @@ const App = () => {
               <Route path="/" exact component={TodoList}/>
               <Route path="/todos/new" exact component={TodoCreate}/>
               <Route path="/todos/edit/:id" exact component={TodoEdit}/>
-              <Route path="/todos/:id" exact component={TodoShow}/>
               <Route path="/todos/delete/:id" exact component={TodoDelete}/>
               </Switch>
           </div>
